@@ -10,6 +10,7 @@ import com.example.timer.data.Recipe
 import com.example.timer.data.RecipeRepository
 import kotlinx.coroutines.launch
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun EditRecipeScreen(navController: NavController, repo: RecipeRepository, recipeId: Int) {
     val scope = rememberCoroutineScope()
